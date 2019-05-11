@@ -1,136 +1,142 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Weather Visualization Dashboard</title>
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
 
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet"
+          type="text/css"
+          media="screen"
           href="style.css">
 
+    <title>Bootstrap Visualization Dashboard</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar"
-           href="weather_visualization_dashboard.html">Latitude</a>
-        <button class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse"
-             id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       id="navbarDropdown"
-                       role="button"
-                       data-toggle="dropdown"
-                       aria-haspopup="true"
-                       aria-expanded="false">
-                        Plots
-                    </a>
-                    <div class="dropdown-menu"
-                         aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item"
-                           href="max_temperature.html">Max Temperature</a>
-                        <a class="dropdown-item"
-                           href="humidity.html">Humidity</a>
-                        <a class="dropdown-item"
-                           href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item"
-                           href="wind_speed.html">Wind Speed</a>
-                        <div class="dropdown-divider"></div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="comparison.html">Comparison </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"
-                       href="data.html">Data </a>
-                </li>
+    <nav class='navbar navbar-expand-lg navbar-light bg-light'>
+        <div class='container-fluid'>
+            <a class='navbar-brand'
+               href=index.html>
+                <strong>Latitude</strong>
+            </a>
 
-            </ul>
+
+            <div class="navbar-nav navbar-right">
+                <ul class="navbar-nav">
+                    <li class="dropdown nav-item">
+                        <a class="dropdown-toggle nav-link"
+                           href="plots.html"
+                           role="button"
+                           data-toggle="dropdown"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            Plots
+                        </a>
+
+                        <div class="dropdown-menu"
+                             aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"
+                               href="max_temperature.html">Max Temperature</a>
+                            <a class="dropdown-item"
+                               href="humidity.html">Humidity</a>
+                            <a class="dropdown-item"
+                               href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item"
+                               href="wind_speed.html">Wind Speed</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="comparison.html">Comparison </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           href="data.html">Data </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <main>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-7"
-                     style='padding-top: 30px'>
-                    <div class='box'>
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class='container'>
+                    <h1 class='title'>Humidity</h1>
+                    <img src="Resources\assets\images/Fig2.png"
+                         alt="Humidity Graph">
 
-                        <h3 class='title'>Humidity</h3>
-                        <hr>
-                        <img src="Resources\assets\images/Fig2.png"
-                             alt="Humidity Graph">
+                    </a>
+                    <p> The data indicates that humidity does not correlate with latitude. Our graph provides
+                        a visual representation to back up this conclusion.
+                    </p>
 
-                        </a>
-                        <p> The data indicates that humidity does not correlate with latitude. Our graph provides
-                            a visual representation to back up this conclusion.
-                        </p>
-
-                    </div>
                 </div>
-                <div class='col-md-12 col-lg-5'>
-                    <div class='box'>
-                        <h5 class='title'>Visualizations</h5>
-                        <hr>
+            </div>
 
-                        <div class='container'>
-                            <div class='row'
-                                 style='padding-bottom: 30px'>
-                                <div class="col-6 visualizations">
-                                    <a href="max_temperature.html">
-                                        <img class='panel'
-                                             src="Resources\assets\images/Fig1.png"
-                                             alt="Max Temperature Graph">
-                                    </a>
-                                </div>
-
-                                <div class='col-6 Visualizations'>
-                                    <a href="humidity.html">
-                                        <img class='panel active'
-                                             src="Resources\assets\images/Fig2.png"
-                                             alt="Humidity Graph">
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class='row'
-                                 style='padding-bottom: 30px'>
-                                <div class='col-6 visualizations'>
-                                    <a href="cloudiness.html">
-                                        <img class='panel'
-                                             src="Resources\assets\images/Fig3.png"
-                                             alt="Cloudiness Graph">
-                                    </a>
-                                </div>
-                                <div class='col-6 visualizations'>
-                                    <a href="wind_speed.html">
-                                        <img class='panel'
-                                             src="Resources\assets\images/Fig4.png"
-                                             alt="Wind Speed Graph">
-                                    </a>
-                                </div>
-                            </div>
+            <div class='col-sm-12 col-md-4'>
+                <div class='container'
+                     id='visualizations'>
+                    <h2>Visualizations</h2>
+                    <div class='row'>
+                        <div class='col-6'>
+                            <a href="max_temperature.html">
+                                <img class='image'
+                                     src="Resources\assets\images/Fig1.png"
+                                     alt="Max Temperature Graph">
+                                <div class='middle text'>Max Temperature Graph</div>
+                            </a>
+                        </div>
+                        <div class='col-6'>
+                            <a href="humidity.html">
+                                <img class='image active'
+                                     src="Resources\assets\images/Fig2.png"
+                                     alt="Humidity Graph">
+                                <div class='middle text'>Humidity Graph</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class='col-6'>
+                            <a href="cloudiness.html">
+                                <img class='image'
+                                     src="Resources\assets\images/Fig3.png"
+                                     alt="Cloudiness Graph">
+                                <div class='middle text'>Cloudiness Graph</div>
+                            </a>
+                        </div>
+                        <div class='col-6'>
+                            <a href="wind_speed.html">
+                                <img class='image'
+                                     src="Resources\assets\images/Fig4.png"
+                                     alt="Wind Speed Graph">
+                                <div class='middle text'>Wind Speed Graph</div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
     </main>
+
     <footer>
         <div class='footer'>Copyright & copy; Seth Lindaman 2019</div>
     </footer>
